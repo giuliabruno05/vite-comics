@@ -61,6 +61,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as *;
+@use '../styles/partials/mixins.scss' as *;
 
 .coming-soon {
     background-color: $black;
@@ -72,13 +73,12 @@ export default {
 .shop {
     background-color: $theme-color;
     height: 100px;
+    position: relative;
+    z-index: 1000;
 
 
     .container {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        justify-content: space-between;
+        @include display-flex;
 
 
         .card {

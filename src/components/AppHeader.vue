@@ -70,15 +70,13 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as *;
+@use '../styles/partials/mixins.scss' as *;
 
 header {
     height: 100px;
 
     .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
+        @include display-flex;
 
         .logo {
             width: 70px;
