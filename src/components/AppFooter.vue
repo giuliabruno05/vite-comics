@@ -10,41 +10,45 @@ export default {
         <section class="nav-footer">
             <div class="container">
                 <div class="shortcut">
-                    <ul>
-                        <li class="title"><strong>DC COMICS</strong></li>
-                        <li>Characters</li>
-                        <li>Comics
-                        </li>
-                        <li>Movies</li>
-                        <li>Tv</li>
-                        <li>Games</li>
-                        <li>Videos</li>
-                        <li>News</li>
-                        <li class="title"><strong>SHOP</strong></li>
-                        <li>Games</li>
-                        <li>Videos</li>
-                    </ul>
+                    <div>
+                        <ul>
+                            <li class="title"><strong>DC COMICS</strong></li>
+                            <li><a href="#">Characters</a></li>
+                            <li><a href="#">Comics</a>
+                            </li>
+                            <li><a href="#">Movies</a></li>
+                            <li><a href="#">Tv</a></li>
+                            <li><a href="#">Games</a></li>
+                            <li><a href="#">Videos</a></li>
+                            <li>News</li>
+                        </ul>
+                        <ul>
+                            <li class="title"><strong>SHOP</strong></li>
+                            <li><a href="#">Games</a></li>
+                            <li><a href="#">Videos</a></li>
+                        </ul>
+                    </div>
                     <ul>
                         <li class="title"><strong>DC</strong></li>
-                        <li>Tearms Of Use</li>
-                        <li>Privacy Policy</li>
-                        <li>Ad choice</li>
-                        <li>Advertising</li>
-                        <li>Jobs</li>
-                        <li>Subscripitions</li>
-                        <li>Taalent Workshops</li>
-                        <li>CPSC certtificates</li>
-                        <li>Ratings</li>
-                        <li>Shop Help</li>
-                        <li>Contact Us</li>
+                        <li><a href="#">Tearms Of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Ad choice</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Subscripitions</a></li>
+                        <li><a href="#">Talent Workshops</a></li>
+                        <li><a href="#">CPSC certtificates</a></li>
+                        <li><a href="#">Ratings</a></li>
+                        <li><a href="#">Shop Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                     <ul>
                         <li class="title"><strong>SITES</strong></li>
-                        <li>DC</li>
-                        <li>MAD Magazine</li>
-                        <li>DC Kids</li>
-                        <li>DC Universe</li>
-                        <li>DC Power Visa</li>
+                        <li><a href="#">DC</a></li>
+                        <li><a href="#">MAD Magazine</a></li>
+                        <li><a href="#">DC Kids</a></li>
+                        <li><a href="#">DC Universe</a></li>
+                        <li><a href="#">DC Power Visa</a></li>
                     </ul>
                 </div>
                 <div class="logo-footer">
@@ -58,19 +62,19 @@ export default {
                 <div class="icon">
                     <p class="follow"> <strong>FOLLOW US</strong></p>
                     <div class="image">
-                        <img src="img/footer-facebook.png" alt="">
+                        <a href="#"><img src="img/footer-facebook.png" alt="logo facebook"></a>
                     </div>
                     <div class="image">
-                        <img src="img/footer-twitter.png" alt="">
+                        <a href="#"><img src="img/footer-twitter.png" alt="logo twitter"></a>
                     </div>
                     <div class="image">
-                        <img src="img/footer-youtube.png" alt="">
+                        <a href="#"><img src="img/footer-youtube.png" alt="logo youtube"></a>
                     </div>
                     <div class="image">
-                        <img src="img/footer-pinterest.png" alt="">
+                        <a href="#"><img src="img/footer-pinterest.png" alt="logo pinterest"></a>
                     </div>
                     <div class="image">
-                        <img src="img/footer-periscope.png" alt="">
+                        <a href="#"><img src="img/footer-periscope.png" alt="logo periscope"></a>
                     </div>
                 </div>
             </div>
@@ -108,14 +112,17 @@ export default {
                 .title {
                     font-size: 1rem;
                     margin: 5px 0;
+                    color: #fff;
                 }
 
                 li {
-                    color: #fff;
                     padding: 3px;
                     font-size: 0.6rem;
                     font-weight: 300;
 
+                    a {
+                        color: #fff;
+                    }
 
                 }
             }

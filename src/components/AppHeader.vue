@@ -60,7 +60,9 @@ export default {
             <nav class="navigazione">
                 <ul>
                     <li v-for="link in links">
-                        <a :href="link.url">{{ link.text }}</a>
+                        <a :href="link.url" :class="link.current ? 'active' : ''">
+                            {{ link.text }}
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -91,6 +93,11 @@ header {
                 a {
                     color: $second-color;
                     font-size: 0.8rem;
+
+                    &.active,
+                    &:hover {
+                        color: $theme-color;
+                    }
                 }
             }
         }

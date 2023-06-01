@@ -1,18 +1,32 @@
 <script>
-
+import ListComic from './ListComic.vue'
 export default {
-    name: "AppMain"
+    name: "AppMain",
+    components: {
+        ListComic
+    },
 }
 </script>
 
 <template>
     <main>
         <section class="coming-soon">
-            <div class="container">
-                <h2>Content goes here</h2>
+        </section>
+        <section>
+            <div class="list-card">
+                <div class="container">
+                    <ListComic />
+                    <div class="label">
+                        CURRENT SERIES
+                    </div>
+                    <div class="labelTwo">
+                        LOAD MORE
+                    </div>
+                </div>
+
             </div>
         </section>
-        <section class="shop">
+        <section class="other-Link">
             <div class="container">
                 <div class="card">
                     <div class="image">
@@ -64,13 +78,40 @@ export default {
 @use '../styles/partials/mixins.scss' as *;
 
 .coming-soon {
-    background-color: $black;
-    height: 100px;
-    color: #fff;
-    padding: 20px;
+    background-image: url("img/jumbotron.jpg");
+    background-size: cover;
+    height: 250px;
+    position: relative;
+
 }
 
-.shop {
+
+
+.list-card {
+    background-color: #1c1c1c;
+
+    .container {
+        padding-bottom: 10px;
+    }
+
+    .label {
+        @include label;
+        position: absolute;
+        top: 335px;
+        background-color: $theme-color;
+    }
+
+    .labelTwo {
+        @include label;
+        background-color: $theme-color;
+        margin: 0 auto;
+
+    }
+
+}
+
+
+.other-Link {
     background-color: $theme-color;
     height: 100px;
     position: relative;
